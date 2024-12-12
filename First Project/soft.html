@@ -1,0 +1,74 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Speed Limitation Software</title>
+	<link rel="stylesheet" href="soft.css">
+</head>
+<body>
+	<div class="dashboard">
+		<div class="header">
+		  </div>
+		  <div class="container">
+			<div class="side-menu">
+			  <ul>
+				<li><i class="fa fa-home"></i>Map</li>
+				<li><i class="fa fa-tachometer-alt"></i>App</li>
+				<li><i class="fa fa-cog"></i>Music</li>
+				<li><i class="fa fa-user"></i>Settings</li>
+			
+			  </ul>
+			</div>
+			
+			<div class="content">
+				<!-- Left Section - Car Status -->
+				<div class="car-status">
+				  <div class="car-view">
+					<img src="car.png" alt="Car Top View">
+				  </div>
+				  <div class="speed">
+					<h2>Speed Limit:</h2>
+					<h5>50 km/h</h5>
+				  </div>
+				  <div id="speed-display">Average Speed: <span id="speed-value">0</span> km/h(<span id="speed-mph-value">0</span> mph)
+				   
+				</div>
+				  
+				  <div class="battery">
+					<p>Power</p>
+					<p>200 km</p>
+					<div class="battery-bar"></div>
+				  </div>
+				</div>
+			  </div>
+	  <!-- Right Section - Navigation & Music -->
+	  <div class="navigation">
+		<div class="map">
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d30648.348456524323!2d80.03653637532469!3d16.218200306890797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3a4a80e219d5231d%3A0xdfc40d36b38556a!2sNarasaraopeta%2C%20Andhra%20Pradesh!3m2!1d16.2359181!2d80.04964989999999!4m5!1s0x3a4a8729805efff9%3A0x3c49f6f7829f8426!2sNarasaraopeta%20Engineering%20College%20(Autonomous)%2C%20Kotappakonda%20Road%2C%20Narasaraopeta%2C%20Andhra%20Pradesh!3m2!1d16.1997248!2d80.0557698!5e0!3m2!1sen!2sin!4v1725973409568!5m2!1sen!2sin" width="620" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<div class="destination">
+		  <p><strong>Narasaraopeta Engineering College</strong></p>
+		  <p>5 km - 15 min</p>
+		  <p>Arrival Time: 09:11 PM</p>
+		</div>
+		<div class="music">
+		  <p>Blinding Lights - The Weeknd</p>
+		  <div class="music-controls">
+			<span>1:24</span>
+			<div class="music-bar"></div>
+			<span>1:55</span>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+	<div id="alert-message">
+		<audio src="alert.mp3"></audio>
+	</div>
+
+	<script src="soft.js"></script>
+</body>
+</html>
